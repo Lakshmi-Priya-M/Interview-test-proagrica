@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "55c15c36-85dc-40c6-82cf-dcd059aafe74",
+		"name": "Travel - Postman Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "busyFlights",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"origin\" : \"CCC\",\r\n    \"destination\":\"DDD\",\r\n    \"departureDate\":\"2019-04-04\",\r\n    \"returnDate\":\"2019-04-09\",\r\n    \"passengerCount\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/busyflights/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"busyflights",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toughJet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\" : \"STN\",\r\n    \"to\":\"SVQ\",\r\n    \"outboundDate\":\"2019-04-04\",\r\n    \"inboundDate\":\"2019-04-08\",\r\n    \"numberOfAdults\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/toughjet/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toughjet",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crazyAir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"origin\" : \"CCC\",\r\n    \"destination\":\"DDD\",\r\n    \"departureDate\":\"2019-04-04\",\r\n    \"returnDate\":\"2019-04-09\",\r\n    \"passengerCount\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/crazyairjet/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crazyairjet",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
